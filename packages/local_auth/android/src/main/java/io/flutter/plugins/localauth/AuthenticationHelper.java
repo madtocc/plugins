@@ -84,9 +84,7 @@ class AuthenticationHelper extends BiometricPrompt.AuthenticationCallback
 
     BiometricPrompt.PromptInfo.Builder promptBuilder =
         new BiometricPrompt.PromptInfo.Builder()
-            .setDescription((String) call.argument("localizedReason"))
             .setTitle((String) call.argument("signInTitle"))
-            .setSubtitle((String) call.argument("biometricHint"))
             .setConfirmationRequired((Boolean) call.argument("sensitiveTransaction"))
             .setConfirmationRequired((Boolean) call.argument("sensitiveTransaction"));
 
